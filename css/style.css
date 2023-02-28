@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 15px 20px;
+  width: 100%;
+  min-height: 99%;
+  min-width: 600px;
+  color: #40a2b1;
+  background: #16161e;
+  font-family: cursor, monospace;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+::selection {
+  color: #16161e;
+  background-color: #40a2b1;
+}
+
+input {
+  left: -1202px;
+  color: #787c99;
+  background-color: #16161e;
+  font-family: input, monospace;
+  position: absolute;
+  height: 1.5em;
+  font-size: 16px;
+  text-decoration: blink;
+  transform: translateY(4px);
+  border: 0;
+  outline: 0;
+}
+
+b {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.cursor {
+  font-size: 12px;
+  color: #787c99;
+  background-color: #787c99;
+  position: relative;
+  opacity: 1;
+  height: 1.5em;
+  width: 10px;
+  max-width: 10px;
+  transform: translateY(4px);
+  overflow: hidden;
+  text-indent: -5px;
+  display: inline-block;
+  text-decoration: blink;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#command {
+  cursor: text;
+  height: 50px;
+  color: #787c99;
+  max-width: 100%;
+}
+
+#liner {
+  line-height: 1.3em;
+  margin-top: -2px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#texter {
+  max-width: 100%;
+}
+
+.terminal-text {
+  color: #40a2b1;
+}
+
+.terminal-text1::after {
+  color: #6a96f1;
+  content: "~";
+}
+
+p {
+  display: block;
+  line-height: 1.2em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.margin {
+  margin-left: 0px;
+}
+
+.color-ban {
+  color: #9ece6a;
+}
+
+.color-index {
+  color: white;
+}
+
+.links {
+  color: #bb9af7;
+}
+
+.color-text {
+  color: #787c99;
+}
+
+.color-text2 {
+  color: #6a96f1;
+}
+
+.color-text3 {
+  color: #787c99;
+}
+
+.color-com {
+  color: #e0af68;
+}
+
+.command {
+  color: #6a96f1;
+  text-shadow: 0 0 2px #6a96f1;
+}
+
+.error {
+  color: #e0af68;
+}
+
+.white {
+  color: #fff;
+}
+
+.inherit,
+a {
+  color: #787c99;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+a.links:hover {
+  background: #6a96f1;
+  color: #16161e;
+}
